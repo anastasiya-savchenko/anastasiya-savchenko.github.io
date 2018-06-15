@@ -1,0 +1,24 @@
+body {
+	position: relative;
+	z-index: 5;
+}
+
+header {
+    color: #000;
+/*    text-align: right;*/
+}
+
+body .bg{
+/*	background-image: url("../img/bg_1.jpg");*/
+/*	background-size: cover;*/
+    background-position: left top;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	min-width:100%;
+	min-height: 200vh;
+	}
+
+h2{
+	margin-top: 2rem;
+}

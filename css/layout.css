@@ -1,0 +1,169 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+}
+
+#c {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	max-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 4rem;
+	color: #fff;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+
+.container,
+.navbar {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+/* Плавні зміни властивостей лінків */
+
+a {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+
+/*************************************/
+
+
+/* Зміни CSS коду розпочинати звідси */
+
+
+/*************************************/
+
+header .row {
+	min-height: 100vh;
+}
+
+#s1 {
+	position: relative;
+	z-index: 1;
+	
+}
+
+#portfolio{
+	position: relative;
+	z-index: 1;
+}
+section {
+	min-height: 100vh;
+	/*  !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+	padding: 50px 0;
+	/* Внітрішні відступи зверху та знизу у секціях <section> */
+}
+
+.d-block2{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#s4,#s2
+ {
+	background-color: black;
+}
+
+
+#portfolio {
+	background-color: #4a75ff;
+	/* Колір фону для секцій #s2, #s4 */
+}
+
+footer{
+	margin-bottom: 40px;
+	margin-top: 40px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	
+/*	background-color: #4a75ff;*/
+	
+	
+}
+footer a{
+	color: #fff;
+	
+}
+footer a:hover {
+	color: #4a75ff;
+	
+}
+.social{
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+.social-text{
+color: #fff;
+}
+#s2 img{
+	border-radius: 50%;
+	
+}
+
+/**************************************/
+
+
+/* Зміна властивостей для breakpoints */
+
+
+/**************************************/
+
+@media screen and (max-width:768px) {
+	#s2  {
+		padding: 0;
+		
+		display: flex;
+		
+		align-items: center;
+		min-height: 100vh;
+	}
+	
+}
+
+@media screen and (max-width:575px) {}
+
+.container,
+.navbar {
+	padding-left: 15px;
+	/* Для Small додати відступи */
+	padding-right: 15px;
+	/* зліва та справа у .container та .navbar */
+}
+.d-block2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+
+section {
+	padding: 25px 0;
+}
+
+
+}
